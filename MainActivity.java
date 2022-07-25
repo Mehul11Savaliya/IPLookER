@@ -84,11 +84,11 @@ double lat=0,lang=0;
                                                            }
                            }
                             else{
-                                Toast.makeText(MainActivity.this, "Error IN Fetching IP Details.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "Error in fetching IP Details!", Toast.LENGTH_SHORT).show();
                             }
                                                   }
                         catch (Exception e){
-                            Toast.makeText(MainActivity.this, "Invalid IP..", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Invalid IP!", Toast.LENGTH_SHORT).show();
                             Log.d("tag",e.getMessage());
                         }
 
@@ -96,7 +96,7 @@ double lat=0,lang=0;
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.d("tag",error.getMessage());
-                        Toast.makeText(MainActivity.this, "Something Went Wrong \nCheck Internet Connection..", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Something went wrong \nCheck internet connection.", Toast.LENGTH_SHORT).show();
                     }
                 });
              queue.add(rqst);
